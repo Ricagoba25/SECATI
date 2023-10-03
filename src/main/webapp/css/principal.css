@@ -1,3 +1,6 @@
+.body{
+background-color: #4870b9;
+}
 .rectangulo_t {
     display: flex;
     justify-content: center; /* Centrar horizontalmente */
@@ -124,4 +127,18 @@
 }
 .celda_excelente2{
     background-color: #049eef;
+}
+
+.rectangulo_tfot{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    width: 500px;
+    height: 40px;
+    background-color:#0a53be;
+    border-radius: 10px;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 2px gray;
 }

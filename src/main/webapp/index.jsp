@@ -40,7 +40,6 @@
     </div>
 
 </div>
-
     <div class="container_respuestas col-xl-8 ml-4">
 
         <table class="table table-bordered mt-5">
@@ -174,6 +173,14 @@
 
         </table>
     </div>
+
+</div>
+
+<div class="container">
+
+    <label class="rectangulo_tfot ">Porcentaje:</label>
+    <label class="rectangulo_t4" >88%</label>
+
 </div>
 
 
