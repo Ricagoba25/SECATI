@@ -13,9 +13,10 @@
 <div class="container">
 
     <label class="rectangulo_t">Tiendita</label>
-    <label class="rectangulo_t2" >SECATI</label>
+    <select class="selecttiendita" id="tiendita" name="tiendita"></select>
     <label class="rectangulo_t3"> Año </label>
-    <label class="rectangulo_t4"> 2023 </label>
+    <select class="selectAño" id="año" name="Año"></select>
+
 </div>
 
 <div class=" recorte row mt-2 mt-5">
@@ -69,11 +70,15 @@
                         <label class="redondeo ">Funcionalidad</label>
                     </div>
                 </td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
+                <td><input type="radio" name="rf1" value="20" id="rf1"></td>
+                <td><input type="radio" name="rf1" value="40"></td>
+                <td><input type="radio" name="rf1" value="60"></td>
+                <td><input type="radio" name="rf1" value="80"></td>
+                <td><input type="radio" name="rf1" value="100"></td>
+
+                <script>
+                    //Aqui me quede
+                </script>
 
             </tr>
             <tr>
@@ -83,11 +88,11 @@
                         <label>Confiabilidad</label>
                     </div>
                 </td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
+                <td><input type="radio" name="rc1" value="20" id="rc1"></td>
+                <td><input type="radio" name="rc1" value="40"></td>
+                <td><input type="radio" name="rc1" value="60"></td>
+                <td><input type="radio" name="rc1" value="80"></td>
+                <td><input type="radio" name="rc1" value="100"></td>
             </tr>
             <tr>
                 <td>
@@ -96,11 +101,11 @@
                         <label>Usabilidad</label>
                     </div>
                 </td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
+                <td><input type="radio" name="ru1" value="20"></td>
+                <td><input type="radio" name="ru1" value="40"></td>
+                <td><input type="radio" name="ru1" value="60"></td>
+                <td><input type="radio" name="ru1" value="80"></td>
+                <td><input type="radio" name="ru1" value="100"></td>
             </tr>
             <tr>
                 <td>
@@ -110,11 +115,11 @@
                         <label>Rendimiento</label>
                     </div>
                 </td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
+                <td><input type="radio" name="rr1" value="r1"></td>
+                <td><input type="radio" name="rr1" value="r2"></td>
+                <td><input type="radio" name="rr1" value="r3"></td>
+                <td><input type="radio" name="rr1" value="r4"></td>
+                <td><input type="radio" name="rr1" value="r5"></td>
             </tr>
             <tr>
                 <td>
@@ -123,11 +128,11 @@
                         <label>Mantenimiento</label>
                     </div>
                 </td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
+                <td><input type="radio" name="rm1" value="r1"></td>
+                <td><input type="radio" name="rm1" value="r2"></td>
+                <td><input type="radio" name="rm1" value="r3"></td>
+                <td><input type="radio" name="rm1" value="r4"></td>
+                <td><input type="radio" name="rm1" value="r5"></td>
             </tr>
             <tr>
                 <td>
@@ -136,11 +141,11 @@
                         <label>Portabilidad</label>
                     </div>
                 </td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
+                <td><input type="radio" name="rp1" value="r1"></td>
+                <td><input type="radio" name="rp1" value="r2"></td>
+                <td><input type="radio" name="rp1" value="r3"></td>
+                <td><input type="radio" name="rp1" value="r4"></td>
+                <td><input type="radio" name="rp1" value="r5"></td>
             </tr>
             <tr>
                 <td>
@@ -149,11 +154,11 @@
                         <label>Seguridad</label>
                     </div>
                 </td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
+                <td><input type="radio" name="rs1" value="20"></td>
+                <td><input type="radio" name="rs1" value="40"></td>
+                <td><input type="radio" name="rs1" value="60"></td>
+                <td><input type="radio" name="rs1" value="80"></td>
+                <td><input type="radio" name="rs1" value="100"></td>
             </tr>
             <tr>
                 <td>
@@ -162,11 +167,11 @@
                         <label>Compatibilidad</label>
                     </div>
                 </td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
-                <td><input type="radio"></td>
+                <td><input type="radio" name="ro1" value="r1"></td>
+                <td><input type="radio" name="ro1" value="r2"></td>
+                <td><input type="radio" name="ro1" value="r3"></td>
+                <td><input type="radio" name="ro1" value="r4"></td>
+                <td><input type="radio" name="ro1" value="r5"></td>
             </tr>
             </tbody>
 
@@ -179,10 +184,14 @@
 <div class="container">
 
     <label class="rectangulo_tfot ">Porcentaje:</label>
-    <label class="rectangulo_t4" >88%</label>
+    <input type="text" id="porcentaje">
 
 </div>
 
 
 </body>
+<script>
+
+
+</script>
 </html>
