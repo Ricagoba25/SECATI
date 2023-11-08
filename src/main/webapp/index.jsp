@@ -5,8 +5,10 @@
   <title>SECATI</title>
   <link href="./css/botstrap.min.css" rel="stylesheet">
   <link href="./css/principal.css" rel="stylesheet">
+    <link href="./js/metodos.js" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.css">
     <link rel="stylesheet" href="./css/adminlte.css">
+
 </head>
 <body>
 
@@ -42,7 +44,7 @@
 
 </div>
     <div class="container_respuestas col-xl-8 ml-4">
-
+        <form name = "fcolor">
         <table class="table table-bordered mt-5">
             <thead>
             <tr>
@@ -60,6 +62,7 @@
                 <th class="celda_buena2">Buena</th>
                 <th class="celda_muyBuena2">Muy Buena</th>
                 <th class="celda_excelente2">Excelente</th>
+                <th>%</th>
             </tr>
             </thead>
             <tbody>
@@ -70,15 +73,12 @@
                         <label class="redondeo ">Funcionalidad</label>
                     </div>
                 </td>
-                <td><input type="radio" name="rf1" value="20" id="rf1"></td>
-                <td><input type="radio" name="rf1" value="40"></td>
-                <td><input type="radio" name="rf1" value="60"></td>
-                <td><input type="radio" name="rf1" value="80"></td>
-                <td><input type="radio" name="rf1" value="100"></td>
+                <td id="result1"><input class="uno" type="radio" name="funcionalidad" value="1" id="malo1" onclick="rojo();"></td>
+                <td><input class="dos" type="radio" name="funcionalidad" value="2" id="regular1" onclick="naranja();"></td>
+                <td><input class="tres" type="radio" name="funcionalidad" value="3"  id="bueno1" onclick="amarillo();"></td>
+                <td><input  class="cuatro" type="radio" name="funcionalidad" value="4" id="muyBueno1" onclick="verde();"></td>
+                <td><input  class="cinco" type="radio" name="funcionalidad" value="5" id="excelente1" onclick="azul();"></td>
 
-                <script>
-                    //Aqui me quede
-                </script>
 
             </tr>
             <tr>
@@ -88,11 +88,13 @@
                         <label>Confiabilidad</label>
                     </div>
                 </td>
-                <td><input type="radio" name="rc1" value="20" id="rc1"></td>
-                <td><input type="radio" name="rc1" value="40"></td>
-                <td><input type="radio" name="rc1" value="60"></td>
-                <td><input type="radio" name="rc1" value="80"></td>
-                <td><input type="radio" name="rc1" value="100"></td>
+                <td><input class="uno" type="radio" name="confiabilidad" value="1" id="malo2" onclick="rojo();"></td>
+                <td><input class="dos" type="radio" name="confiabilidad" value="2" id="regular2" onclick="naranja();"></td>
+                <td><input class="tres" type="radio" name="confiabilidad" value="3"  id="bueno2" onclick="amarillo();"></td>
+                <td><input class="cuatro"  type="radio" name="confiabilidad" value="4" id="muyBueno2" onclick="verde();"></td>
+                <td><input class="cinco" type="radio" name="confiabilidad" value="5" id="excelente2" onclick="azul();"></td>
+                <td id="result2"></td>
+            </tr>
             </tr>
             <tr>
                 <td>
@@ -101,11 +103,12 @@
                         <label>Usabilidad</label>
                     </div>
                 </td>
-                <td><input type="radio" name="ru1" value="20"></td>
-                <td><input type="radio" name="ru1" value="40"></td>
-                <td><input type="radio" name="ru1" value="60"></td>
-                <td><input type="radio" name="ru1" value="80"></td>
-                <td><input type="radio" name="ru1" value="100"></td>
+                <td><input class="uno" type="radio" name="usabilidad" value="1" id="malo3" onclick="rojo();"></td>
+                <td><input class="dos" type="radio" name="usabilidad" value="2" id="regular3" onclick="naranja();"></td>
+                <td><input class="tres" type="radio" name="usabilidad" value="3"  id="bueno3" onclick="amarillo();"></td>
+                <td><input class="cuatro"  type="radio" name="usabilidad" value="4" id="muyBueno3" onclick="verde();"></td>
+                <td><input class="cinco" type="radio" name="usabilidad" value="5" id="excelente3" onclick="azul();"></td>
+                <td id="result3"></td>
             </tr>
             <tr>
                 <td>
@@ -115,11 +118,12 @@
                         <label>Rendimiento</label>
                     </div>
                 </td>
-                <td><input type="radio" name="rr1" value="r1"></td>
-                <td><input type="radio" name="rr1" value="r2"></td>
-                <td><input type="radio" name="rr1" value="r3"></td>
-                <td><input type="radio" name="rr1" value="r4"></td>
-                <td><input type="radio" name="rr1" value="r5"></td>
+                <td><input class="uno" type="radio" name="rendimiento" value="1" id="malo4" onclick="rojo();"></td>
+                <td><input class="dos" type="radio" name="rendimiento" value="2" id="regular4" onclick="naranja();"></td>
+                <td><input class="tres" type="radio" name="rendimiento" value="3"  id="bueno4" onclick="amarillo();"></td>
+                <td><input class="cuatro"  type="radio" name="rendimiento" value="4" id="muyBueno4" onclick="verde();"></td>
+                <td><input class="cinco" type="radio" name="rendimiento" value="5" id="excelente4" onclick="azul();"></td>
+                <td id="result4"></td>
             </tr>
             <tr>
                 <td>
@@ -128,11 +132,12 @@
                         <label>Mantenimiento</label>
                     </div>
                 </td>
-                <td><input type="radio" name="rm1" value="r1"></td>
-                <td><input type="radio" name="rm1" value="r2"></td>
-                <td><input type="radio" name="rm1" value="r3"></td>
-                <td><input type="radio" name="rm1" value="r4"></td>
-                <td><input type="radio" name="rm1" value="r5"></td>
+                <td><input class="uno" type="radio" name="mantenimiento" value="1" id="malo5" onclick="rojo();"></td>
+                <td><input class="dos" type="radio" name="mantenimiento" value="2" id="regular5" onclick="naranja();"></td>
+                <td><input class="tres" type="radio" name="mantenimiento" value="3"  id="bueno5" onclick="amarillo();"></td>
+                <td><input class="cuatro"  type="radio" name="mantenimiento" value="4" id="muyBueno5" onclick="verde();"></td>
+                <td><input class="cinco" type="radio" name="mantenimiento" value="5" id="excelente5" onclick="azul();"></td>
+                <td id="result5"></td>
             </tr>
             <tr>
                 <td>
@@ -141,11 +146,12 @@
                         <label>Portabilidad</label>
                     </div>
                 </td>
-                <td><input type="radio" name="rp1" value="r1"></td>
-                <td><input type="radio" name="rp1" value="r2"></td>
-                <td><input type="radio" name="rp1" value="r3"></td>
-                <td><input type="radio" name="rp1" value="r4"></td>
-                <td><input type="radio" name="rp1" value="r5"></td>
+                <td><input class="uno" type="radio" name="portabilidad" value="1" id="malo6" onclick="rojo();"></td>
+                <td><input class="dos" type="radio" name="portabilidad" value="2" id="regular6" onclick="naranja();"></td>
+                <td><input class="tres" type="radio" name="portabilidad" value="3"  id="bueno6" onclick="amarillo();"></td>
+                <td><input class="cuatro"  type="radio" name="portabilidad" value="4" id="muyBueno6" onclick="verde();"></td>
+                <td><input class="cinco" type="radio" name="portabilidad" value="5" id="excelente6" onclick="azul();"></td>
+                <td id="result6"></td>
             </tr>
             <tr>
                 <td>
@@ -154,11 +160,12 @@
                         <label>Seguridad</label>
                     </div>
                 </td>
-                <td><input type="radio" name="rs1" value="20"></td>
-                <td><input type="radio" name="rs1" value="40"></td>
-                <td><input type="radio" name="rs1" value="60"></td>
-                <td><input type="radio" name="rs1" value="80"></td>
-                <td><input type="radio" name="rs1" value="100"></td>
+                <td><input class="uno" type="radio" name="seguridad" value="1" id="malo7" onclick="rojo();"></td>
+                <td><input class="dos" type="radio" name="seguridad" value="2" id="regular7" onclick="naranja();"></td>
+                <td><input class="tres" type="radio" name="seguridad" value="3"  id="bueno7" onclick="amarillo();"></td>
+                <td><input class="cuatro"  type="radio" name="seguridad" value="4" id="muyBueno7" onclick="verde();"></td>
+                <td><input class="cinco" type="radio" name="seguridad" value="5" id="excelente7" onclick="azul();"></td>
+                <td id="result7"></td>
             </tr>
             <tr>
                 <td>
@@ -167,31 +174,34 @@
                         <label>Compatibilidad</label>
                     </div>
                 </td>
-                <td><input type="radio" name="ro1" value="r1"></td>
-                <td><input type="radio" name="ro1" value="r2"></td>
-                <td><input type="radio" name="ro1" value="r3"></td>
-                <td><input type="radio" name="ro1" value="r4"></td>
-                <td><input type="radio" name="ro1" value="r5"></td>
+                <td><input class="uno" type="radio" name="compatibilidad" value="1" id="malo8" onclick="rojo();"></td>
+                <td><input class="dos" type="radio" name="compatibilidad" value="2" id="regular8" onclick="naranja();"></td>
+                <td><input class="tres" type="radio" name="compatibilidad" value="3"  id="bueno8" onclick="amarillo();"></td>
+                <td><input class="cuatro"  type="radio" name="compatibilidad" value="4" id="muyBueno8" onclick="verde();"></td>
+                <td><input class="cinco" type="radio" name="compatibilidad" value="5" id="excelente8" onclick="azul();"></td>
+                <td id="result8"></td>
+            </tr>
+            <tr style="background-color:#0a53be; color: #ffffff">
+                <td>Total</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Porcentaje: </td>
+                <td id="total"></td>
             </tr>
             </tbody>
 
 
         </table>
+        </form>
     </div>
-
-</div>
-
-<div class="container">
-
-    <label class="rectangulo_tfot ">Porcentaje:</label>
-    <input type="text" id="porcentaje">
 
 </div>
 
 
 </body>
-<script>
 
 
-</script>
+<script src="script.js"></script>
 </html>
