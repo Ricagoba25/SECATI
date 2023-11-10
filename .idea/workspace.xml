@@ -10,10 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a04885-ede9-4e6b-b48e-2e393db681e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a7dc2b5e-88b3-49d0-9bf5-58abd283753e.corrupted.20231109-074925.reason.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources/a7dc2b5e-88b3-49d0-9bf5-58abd283753e.corrupted.20231109-074925.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a7dc2b5e-88b3-49d0-9bf5-58abd283753e.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/principal.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/js/metodos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/metodos.js" afterDir="false" />
     </list>
@@ -73,7 +71,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging main",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "C:/Users/richa/OneDrive/Escritorio/Proyecto Hucochea/SECATI/src/main/webapp/js",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
