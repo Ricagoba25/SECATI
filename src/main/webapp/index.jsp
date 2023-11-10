@@ -266,7 +266,7 @@
                             <div class="text1" style="margin-left: 500px; margin-top: 30px">
                                 Porcentaje:
                             </div>
-                            <div id="totalTotal" style="margin-left: 5px; margin-top: 30px"></div>
+                            <div class="porcentaje" id="totalTotal" style="margin-left: 5px; margin-top: 30px; font-size: 30px"> %</div>
                         </div>
                     </div>
                 </div>
@@ -279,7 +279,7 @@
                     <div class="icon">
                         <i class="fa-solid fa-brush ml-3" style="font-size:30px"></i>
                     </div>
-                    <div class="text">
+                    <div class="text" type="reset" name="Restablecer" onclick="borrar()" id="reseet">
                         Limpiar
                     </div>
                 </div>
@@ -380,7 +380,7 @@
     .caracter-parent {
         display: flex;
         flex-direction: column;
-        gap: 24px 0px;
+        gap: 23px 0px;
     }
 
     .celda_mala {
@@ -462,6 +462,17 @@
         margin-left: -14px;
         padding-left: 21px;
         font-weight: bold;
+        font-size: 30px;
+    }
+
+    .porcentaje {
+        background: #ffffff;
+        width: 200px;
+        padding: 9px;
+        border-radius: 0px 10px 10px 0px;
+        color: #030303;
+        margin-left: -14px;
+        padding-left: 21px;
     }
 </style>
 

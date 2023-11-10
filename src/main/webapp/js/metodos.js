@@ -481,6 +481,11 @@ function azul8(tdID) {
 ///total
 function sumatoria() {
 
+    var radiosSeleccionados = document.querySelectorAll('input[type="radio"]:checked');
+    if (radiosSeleccionados.length !== 8) {
+        return;
+    }
+
     var val1 = Number(document.getElementById("result1").textContent);
     var val2 = Number(document.getElementById("result2").textContent);
     var val3 = Number(document.getElementById("result3").textContent);
@@ -492,6 +497,98 @@ function sumatoria() {
 
     var sumaTo = (val1 + val2 + val3 + val4 + val5 + val6 + val7 + val8) / 8;
 
-    totalTotal.textContent = sumaTo.toFixed(2);
+    totalTotal.textContent = sumaTo.toFixed(2) + "%";
+
+}
+function borrar() {
+    pintarfun1a.style.backgroundColor = "#ffffff";
+    pintarfun1b.style.backgroundColor = "#ffffff";
+    pintarfun1c.style.backgroundColor = "#ffffff";
+    pintarfun1d.style.backgroundColor = "#ffffff";
+    pintarfun1e.style.backgroundColor = "#ffffff";
+    document.getElementById("malo1f").checked = false;
+    document.getElementById("malo2f").checked = false;
+    document.getElementById("malo3f").checked = false;
+    document.getElementById("malo4f").checked = false;
+    document.getElementById("malo5f").checked = false;
+
+    pintarcon1a.style.backgroundColor = "#ffffff";
+    pintarcon1b.style.backgroundColor = "#ffffff";
+    pintarcon1c.style.backgroundColor = "#ffffff";
+    pintarcon1d.style.backgroundColor = "#ffffff";
+    pintarcon1e.style.backgroundColor = "#ffffff";
+    document.getElementById("malo1c").checked = false;
+    document.getElementById("malo2c").checked = false;
+    document.getElementById("malo3c").checked = false;
+    document.getElementById("malo4c").checked = false;
+    document.getElementById("malo5c").checked = false;
+
+    pintarusa1a.style.backgroundColor = "#ffffff";
+    pintarusa1b.style.backgroundColor = "#ffffff";
+    pintarusa1c.style.backgroundColor = "#ffffff";
+    pintarusa1d.style.backgroundColor = "#ffffff";
+    pintarusa1e.style.backgroundColor = "#ffffff";
+    document.getElementById("malo1u").checked = false;
+    document.getElementById("malo2u").checked = false;
+    document.getElementById("malo3u").checked = false;
+    document.getElementById("malo4u").checked = false;
+    document.getElementById("malo5u").checked = false;
+
+    pintarren1a.style.backgroundColor = "#ffffff";
+    pintarren1b.style.backgroundColor = "#ffffff";
+    pintarren1c.style.backgroundColor = "#ffffff";
+    pintarren1d.style.backgroundColor = "#ffffff";
+    pintarren1e.style.backgroundColor = "#ffffff";
+    document.getElementById("malo1r").checked = false;
+    document.getElementById("malo2r").checked = false;
+    document.getElementById("malo3r").checked = false;
+    document.getElementById("malo4r").checked = false;
+    document.getElementById("malo5r").checked = false;
+
+    pintarman1a.style.backgroundColor = "#ffffff";
+    pintarman1b.style.backgroundColor = "#ffffff";
+    pintarman1c.style.backgroundColor = "#ffffff";
+    pintarman1d.style.backgroundColor = "#ffffff";
+    pintarman1e.style.backgroundColor = "#ffffff";
+    document.getElementById("malo1m").checked = false;
+    document.getElementById("malo2m").checked = false;
+    document.getElementById("malo3m").checked = false;
+    document.getElementById("malo4m").checked = false;
+    document.getElementById("malo5m").checked = false;
+
+    pintarpor1a.style.backgroundColor = "#ffffff";
+    pintarpor1b.style.backgroundColor = "#ffffff";
+    pintarpor1c.style.backgroundColor = "#ffffff";
+    pintarpor1d.style.backgroundColor = "#ffffff";
+    pintarpor1e.style.backgroundColor = "#ffffff";
+    document.getElementById("malo1p").checked = false;
+    document.getElementById("malo2p").checked = false;
+    document.getElementById("malo3p").checked = false;
+    document.getElementById("malo4p").checked = false;
+    document.getElementById("malo5p").checked = false;
+
+    pintarseg1a.style.backgroundColor = "#ffffff";
+    pintarseg1b.style.backgroundColor = "#ffffff";
+    pintarseg1c.style.backgroundColor = "#ffffff";
+    pintarseg1d.style.backgroundColor = "#ffffff";
+    pintarseg1e.style.backgroundColor = "#ffffff";
+    document.getElementById("malo1s").checked = false;
+    document.getElementById("malo2s").checked = false;
+    document.getElementById("malo3s").checked = false;
+    document.getElementById("malo4s").checked = false;
+    document.getElementById("malo5s").checked = false;
+
+    pintarcom1a.style.backgroundColor = "#ffffff";
+    pintarcom1b.style.backgroundColor = "#ffffff";
+    pintarcom1c.style.backgroundColor = "#ffffff";
+    pintarcom1d.style.backgroundColor = "#ffffff";
+    pintarcom1e.style.backgroundColor = "#ffffff";
+    document.getElementById("malo1o").checked = false;
+    document.getElementById("malo2o").checked = false;
+    document.getElementById("malo3o").checked = false;
+    document.getElementById("malo4o").checked = false;
+    document.getElementById("malo5o").checked = false;
+
+    totalTotal.textContent=" %";
 
 }
