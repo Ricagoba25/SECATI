@@ -1,5 +1,7 @@
 
 //*************************************************************** Funcionabilidad ***************************************************************
+
+
 function rojo1(tdID) {
     var tds = document.querySelectorAll('td[id^="pintarfun"]');
     tds.forEach(function(td) {
@@ -10,7 +12,6 @@ function rojo1(tdID) {
     td.style.backgroundColor = "#f30606";
     result1.textContent = 0;
     sumatoria();
-
 
 }
 
@@ -500,6 +501,23 @@ function sumatoria() {
     totalTotal.textContent = sumaTo.toFixed(2) + "%";
 
 }
+
+
+function confirmarBorrar() {
+    Swal.fire({
+        title: '¿Estás seguro?',
+        text: "Se borraran las selecciones realizadas",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Sí, cancelar'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            borrar();
+        }
+    });
+}
 function borrar() {
     pintarfun1a.style.backgroundColor = "#ffffff";
     pintarfun1b.style.backgroundColor = "#ffffff";
@@ -592,3 +610,5 @@ function borrar() {
     totalTotal.textContent=" %";
 
 }
+
+
