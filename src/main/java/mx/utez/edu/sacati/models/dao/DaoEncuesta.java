@@ -1,7 +1,6 @@
 package mx.utez.edu.sacati.models.dao;
 
 import mx.utez.edu.sacati.models.BeanEncuesta;
-import mx.utez.edu.sacati.models.BeanTiendita;
 import mx.utez.edu.sacati.utils.MysqlConector;
 
 import java.sql.Connection;
@@ -65,18 +64,9 @@ public class DaoEncuesta implements DaoRepository {
         return null;
     }
 
-    @Override
-    public boolean update(int id, Object object) {
-        return false;
-    }
 
     @Override
-    public boolean delete(int id) {
-        return false;
-    }
-
-    @Override
-    public boolean insert(Object object) {
+    public boolean insert(String id_encuesta, String id_tiendita, int funcionalidad, int confiabilidad, int usabilidad, int mantenimiento, int seguridad, int rendimiento, int compatibilidad, int portabilidad) {
         return false;
     }
 }

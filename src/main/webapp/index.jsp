@@ -15,6 +15,7 @@
 
 <body class="background-color" style="align-items: center">
 <div class="container-fluid">
+    <form id="respuestas" action="respuestas" method="post">
     <div class="container" style="align-items: center">
         <div class="row principal g-0 mt-5">
             <div class="col-sm-2">
@@ -140,6 +141,7 @@
                         <th class="celda_excelente2">Excelente</th>
                     </tr>
                     </thead>
+
                     <tbody>
                     <tr>
                         <td id="pintarfun1a"><input style="width:35px;height:35px" class="uno" type="radio"
@@ -181,117 +183,117 @@
                     </tr>
                     <tr>
                         <td id="pintarusa1a"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="usabilidad" value="1" id="malo1u"
+                                                    name="usabilidad" value="0" id="malo1u"
                                                     onclick="rojo3('pintarusa1a');" disabled>
                         </td>
                         <td id="pintarusa1b"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="usabilidad" value="1"
+                                                    name="usabilidad" value="25"
                                                     id="malo2u" onclick="naranja3('pintarusa1b');" disabled></td>
                         <td id="pintarusa1c"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="usabilidad" value="1"
+                                                    name="usabilidad" value="50"
                                                     id="malo3u" onclick="amarillo3('pintarusa1c');" disabled></td>
                         <td id="pintarusa1d"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="usabilidad" value="1"
+                                                    name="usabilidad" value="75"
                                                     id="malo4u" onclick="verde3('pintarusa1d');" disabled></td>
                         <td id="pintarusa1e"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="usabilidad" value="1"
+                                                    name="usabilidad" value="100"
                                                     id="malo5u" onclick="azul3('pintarusa1e');" disabled></td>
                         <td id="result3" style="display: none"></td>
                     </tr>
                     <tr>
                         <td id="pintarren1a"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="rendimiento" value="1" id="malo1r"
+                                                    name="rendimiento" value="0" id="malo1r"
                                                     onclick="rojo4('pintarren1a');" disabled>
                         </td>
                         <td id="pintarren1b"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="rendimiento" value="1"
+                                                    name="rendimiento" value="25"
                                                     id="malo2r" onclick="naranja4('pintarren1b');" disabled></td>
                         <td id="pintarren1c"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="rendimiento" value="1"
+                                                    name="rendimiento" value="50"
                                                     id="malo3r" onclick="amarillo4('pintarren1c');" disabled></td>
                         <td id="pintarren1d"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="rendimiento" value="1"
+                                                    name="rendimiento" value="75"
                                                     id="malo4r" onclick="verde4('pintarren1d');" disabled></td>
                         <td id="pintarren1e"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="rendimiento" value="1"
+                                                    name="rendimiento" value="100"
                                                     id="malo5r" onclick="azul4('pintarren1e');" disabled></td>
                         <td id="result4" style="display: none"></td>
                     </tr>
                     <tr>
 
                         <td id="pintarman1a"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="mantenimiento" value="1" id="malo1m"
+                                                    name="mantenimiento" value="0" id="malo1m"
                                                     onclick="rojo5('pintarman1a');" disabled>
                         </td>
                         <td id="pintarman1b"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="mantenimiento" value="1"
+                                                    name="mantenimiento" value="25"
                                                     id="malo2m" onclick="naranja5('pintarman1b');" disabled></td>
                         <td id="pintarman1c"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="mantenimiento" value="1"
+                                                    name="mantenimiento" value="50"
                                                     id="malo3m" onclick="amarillo5('pintarman1c');" disabled></td>
                         <td id="pintarman1d"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="mantenimiento" value="1"
+                                                    name="mantenimiento" value="75"
                                                     id="malo4m" onclick="verde5('pintarman1d');" disabled></td>
                         <td id="pintarman1e"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="mantenimiento" value="1"
+                                                    name="mantenimiento" value="100"
                                                     id="malo5m" onclick="azul5('pintarman1e');" disabled></td>
                         <td id="result5" style="display: none"></td>
                     </tr>
                     <tr>
 
                         <td id="pintarpor1a"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="portablidad" value="1" id="malo1p"
+                                                    name="portabilidad" value="0" id="malo1p"
                                                     onclick="rojo6('pintarpor1a');" disabled>
                         </td>
                         <td id="pintarpor1b"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="portablidad" value="1"
+                                                    name="portabilidad" value="25"
                                                     id="malo2p" onclick="naranja6('pintarpor1b');" disabled></td>
                         <td id="pintarpor1c"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="portablidad" value="1"
+                                                    name="portabilidad" value="50"
                                                     id="malo3p" onclick="amarillo6('pintarpor1c');" disabled></td>
                         <td id="pintarpor1d"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="portablidad" value="1"
+                                                    name="portabilidad" value="75"
                                                     id="malo4p" onclick="verde6('pintarpor1d');" disabled></td>
                         <td id="pintarpor1e"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="portablidad" value="1"
+                                                    name="portabilidad" value="100"
                                                     id="malo5p" onclick="azul6('pintarpor1e');" disabled></td>
                         <td id="result6" style="display: none"></td>
                     </tr>
                     <tr>
 
                         <td id="pintarseg1a"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="seguridad" value="1" id="malo1s"
+                                                    name="seguridad" value="0" id="malo1s"
                                                     onclick="rojo7('pintarseg1a');" disabled></td>
                         <td id="pintarseg1b"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="seguridad" value="1"
+                                                    name="seguridad" value="25"
                                                     id="malo2s" onclick="naranja7('pintarseg1b');" disabled></td>
                         <td id="pintarseg1c"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="seguridad" value="1"
+                                                    name="seguridad" value="50"
                                                     id="malo3s" onclick="amarillo7('pintarseg1c');" disabled></td>
                         <td id="pintarseg1d"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="seguridad" value="1"
+                                                    name="seguridad" value="75"
                                                     id="malo4s" onclick="verde7('pintarseg1d');" disabled></td>
                         <td id="pintarseg1e"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="seguridad" value="1"
+                                                    name="seguridad" value="100"
                                                     id="malo5s" onclick="azul7('pintarseg1e');" disabled></td>
                         <td id="result7" style="display: none"></td>
                     </tr>
                     <tr>
                         <td id="pintarcom1a"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="compatibilidad" value="1" id="malo1o"
+                                                    name="compatibilidad" value="0" id="malo1o"
                                                     onclick="rojo8('pintarcom1a');" disabled>
                         </td>
                         <td id="pintarcom1b"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="compatibilidad" value="1"
+                                                    name="compatibilidad" value="25"
                                                     id="malo2o" onclick="naranja8('pintarcom1b');" disabled></td>
                         <td id="pintarcom1c"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="compatibilidad" value="1"
+                                                    name="compatibilidad" value="50"
                                                     id="malo3o" onclick="amarillo8('pintarcom1c');" disabled></td>
                         <td id="pintarcom1d"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="compatibilidad" value="1"
+                                                    name="compatibilidad" value="75"
                                                     id="malo4o" onclick="verde8('pintarcom1d');" disabled></td>
                         <td id="pintarcom1e"><input style="width:35px;height:35px" class="uno" type="radio"
-                                                    name="compatibilidad" value="1"
+                                                    name="compatibilidad" value="100"
                                                     id="malo5o" onclick="azul8('pintarcom1e');" disabled></td>
                         <td id="result8" style="display: none"></td>
 
@@ -300,8 +302,8 @@
                 </table>
             </div>
         </div>
-
     </div>
+
 
     <div>
         <div class="row">
@@ -321,7 +323,7 @@
             </div>
         </div>
     </div>
-
+    </form>
     <div class="actions">
         <div class="caracter-parent">
             <div class="caracter-item">
@@ -337,7 +339,7 @@
                 <div class="icon">
                     <i class="fa-solid fa-floppy-disk ml-3" style="font-size:30px"></i>
                 </div>
-                <div class="text">
+                <div class="text" type="guardar" name="guardar" onclick="guardarDatos()" id="guardar">
                     Guardar
                 </div>
             </div>
@@ -368,6 +370,65 @@
 
 </body>
 <script>
+
+    /*
+    function guardarDatos() {
+        // Obtener el formulario y el select por sus IDs
+        var formulario = document.getElementById("respuestas");
+        var selectTienda = document.getElementById("tienda");
+        var selectEncuesta = document.getElementById("encuesta");
+
+        // Crear un objeto FormData para recolectar los datos del formulario
+        var formData = new FormData(formulario);
+
+        // Obtener el valor seleccionado del select
+        var valorTienda = selectTienda.value;
+        var valorEncuesta = selectEncuesta.value;
+
+        // Agregar el valor del select al FormData
+        formData.append("tienda", valorTienda);
+        formData.append("encuesta", valorEncuesta);
+
+
+        // Realizar una solicitud POST al servlet con los datos recolectados
+        fetch('/sacati_war_exploded/respuestas', {
+            method: 'POST',
+            body: formData
+        })
+            .then(response => {
+                // Verificar si la solicitud fue exitosa (código 200)
+                if (response.ok) {
+                    // Decodificar la respuesta en formato JSON
+                    return response.json();
+                } else {
+                    throw new Error('Error en la solicitud');
+                }
+            })
+            .then(data => {
+                // Manejar los datos de la respuesta (en este caso, un objeto JSON)
+                console.log('Respuesta del servidor:', data);
+                // Hacer algo con los datos recibidos del servidor
+            })
+            .catch(error => {
+                // Manejar errores en la solicitud
+                console.error('Error:', error);
+            });
+    }
+*/
+
+
+    function guardarDatos(){
+    var formulario = document.getElementById("respuestas");
+    var selectTienda = document.getElementById("tienda");
+    var selectEncuesta = document.getElementById("encuesta");
+
+    var valorTienda = selectTienda.value;
+        var valorEncuesta = selectEncuesta.value;
+
+    formulario.submit();
+    }
+
+
     function validarRadios() {
         const tiendaSelec = document.getElementById('tienda').value;
         const encuestaSelec = document.getElementById('encuesta').value;

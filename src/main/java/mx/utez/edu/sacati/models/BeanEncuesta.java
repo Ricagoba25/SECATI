@@ -8,6 +8,7 @@ public class BeanEncuesta implements Serializable {
     private  String descripcion;
 
 
+
     public BeanEncuesta() {
     }
 

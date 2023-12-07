@@ -7,9 +7,5 @@ public interface DaoRepository<T> {
     List<T> findAll();
     T findOne(int id);
 
-    boolean update(int id, T object);
-
-    boolean delete(int id);
-
-    boolean insert(T object);
+    boolean insert(String id_encuesta, String id_tiendita, int funcionalidad, int confiabilidad, int usabilidad, int mantenimiento, int seguridad, int rendimiento, int compatibilidad, int portabilidad);
 }

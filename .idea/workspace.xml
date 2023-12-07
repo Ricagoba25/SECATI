@@ -10,21 +10,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a04885-ede9-4e6b-b48e-2e393db681e6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/controllers/TienditaServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/BeanRespuestas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/BeanTiendita.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoRespuestas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoTiendita.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/controllers/RespuestasServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/BeanPregunta.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/controllers/encuestaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/controllers/EncuestaServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/beanEncuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/BeanEncuesta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/daoEncuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoEncuesta.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/daoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/controllers/EncuestaServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/controllers/EncuestaServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/BeanEncuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/BeanEncuesta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/BeanRespuestas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/BeanRespuesta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoEncuesta.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoEncuesta.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoRespuestas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoRespuestas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoTiendita.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/mx/utez/edu/sacati/models/dao/DaoTiendita.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/metodos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/js/metodos.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,28 +74,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/richelectrick/Library/CloudStorage/OneDrive-Personal/Escritorio/SECATI/SECATI",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/richelectrick/Library/CloudStorage/OneDrive-Personal/Escritorio/SECATI/SECATI&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\richa\OneDrive\Escritorio\Proyecto Hucochea\SECATI\src\main\webapp\js" />
@@ -111,10 +108,25 @@
       <recent name="C:\Users\richa\IdeaProjects\sacati\src\main\webapp" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="mx.utez.edu.sacati.models.dao" />
+      <recent name="mx.utez.edu.sacati.controllers" />
       <recent name="mx.utez.edu.sacati.utils" />
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="sacati" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="sacati" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Tomcat 9.0.762" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.64" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
@@ -232,6 +244,9 @@
       <workItem from="1701743935738" duration="2804000" />
       <workItem from="1701754533908" duration="19000" />
       <workItem from="1701807300755" duration="46000" />
+      <workItem from="1701807697257" duration="1836000" />
+      <workItem from="1701833592102" duration="8419000" />
+      <workItem from="1701921806484" duration="12950000" />
     </task>
     <servers />
   </component>
